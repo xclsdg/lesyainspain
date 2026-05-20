@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.upper {
+    display: flex;
+    align-items: center;
+    min-height: 850px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, #fff 100%), url("/src/img/bababa.jpg") center/cover no-repeat;
+    padding: 140px 20px 40px 20px;
+}
+.title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.title_descr {
+    margin-top: 15px;
+    max-width: 650px;
+    margin: 15px auto 0 auto;
+    line-height: 1,6;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact {
+    display: inline-block;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 15px;
+    background: #DCEBFF;
+    color: #2E3A59;
+    font-size: 13px;
+    font-weight:600;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    height: auto;
+    line-height: normal;
+}
+
+.contact:hover{
+    transform: translateY(-2px);
+}
+
+.inst {
+    display: inline-block;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 15px;
+    background: #DCEBFF;
+    color: #2E3A59;
+    font-size: 13px;
+    font-weight:600;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    height: auto;
+    line-height: normal;
+}
+
+.inst:hover{
+    transform: translateY(-2px);
+}
+
+.middle {
+    background:linear-gradient(to bottom,rgba(244,248,255,0.75),rgba(171,196,255,0.75)),url(...)center center/cover no-repeat;
+}
+.middle_title {
+    margin-top: 5px;
+    font-size: 28px;
+    padding: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.excursion {
+    display:flex;
+    justify-content:center;
+    margin-top: 50px;
+    padding-bottom: 60px;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+.excursion img {
+    height: 350px;
+    width: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.excursion img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.about {
+    padding: 80px 0;
+    background:linear-gradient(to bottom,rgba(171,196,255,0.75),rgba(244,248,255,0.75)),url(...)center center/cover no-repeat;
+}
+
+.about_title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.about_items {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about_card {
+    width: 320px;
+    padding: 30px;
+    border-radius: 25px;
+    background: #f4f8ff;
+    transition: 0.3s;
+}
+
+.about_card:hover {
+    transform: translateY(-5px);
+}
+
+.about_card h3 {
+    margin-bottom: 15px;
+}
+
+.footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+    background: #f4f8ff;
+}
+
+.footer_text {
+    text-align: center;
+    font-size: 14px;
+    color: #5b6475;
+}
+
+@media (max-width: 768px) {
+
+    .upper {
+        min-height: 650px;
+        padding: 40px 15px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .title_descr {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 1.5;
+        max-width: 320px;
+        margin: 15px auto 0 auto;
+    }
+
+    .links {
+        gap: 15px;
+    }
+
+    .contact,
+    .inst {
+        width: 100%;
+        max-width: 220px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+}
